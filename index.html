@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Stats Guys</title>
+<meta name="description" content="Data for activists, researchers and journalists. Projects: PolluterJet, tracking private jets that land in Antalya during COP31, and InequalityBot (beta).">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Stats Guys">
+<meta property="og:title" content="The Stats Guys">
+<meta property="og:description" content="Data for activists, researchers and journalists.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231F2F7A'/%3E%3Crect x='14' y='44' width='36' height='4' fill='%23CB5F43'/%3E%3Cpath d='M18 40V28M28 40V20M38 40V32M48 40V16' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--paper:#fff;--orange:#CB5F43;--ink:#20211D;--navy:#1F2F7A;--blue:#2F6690;--grey:#6B6A63;--tint:#F3DED4;--soft:#F4F1EC}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.55}
+a{color:var(--navy)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:48px 16px 40px}
+header{text-align:center}
+h1{margin:0;font-family:'Dancing Script','Snell Roundhand',cursive;font-weight:500;color:var(--navy);font-size:clamp(56px,12vw,120px);line-height:1.1}
+.rule{width:56px;height:3px;background:var(--orange);margin:18px auto}
+.tag{margin:0 auto;font-family:'IBM Plex Mono',monospace;font-size:clamp(12px,2.4vw,15px);letter-spacing:.14em;text-transform:uppercase;color:var(--grey);max-width:40ch;line-height:1.6}
+.contact{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px;margin:40px 0 0;background:var(--soft);border-left:6px solid var(--orange);padding:18px 22px}
+.contact p{margin:0;font-size:18px;font-weight:500}
+h2{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);margin:48px 0 20px;display:flex;align-items:center;gap:14px}
+h2::after{content:"";flex:1;height:2px;background:var(--tint)}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border:3px solid var(--navy);background:var(--navy);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:pointer;text-align:center}
+.btn:hover{background:#17235f}
+.btn.alt{background:#fff;color:var(--navy)}
+.btn.alt:hover{background:var(--tint)}
+/* flip card: front = description, back = screenshot of the project. Without hover (phones) the screenshot sits under the text. */
+.flip-inner{display:flex;flex-direction:column;gap:14px}
+.face{background:#fff;border:3px solid var(--navy);box-shadow:7px 7px 0 var(--orange)}
+.front{display:flex;flex-direction:column;padding:22px 22px 24px}
+.top{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.badge{flex:none}
+.name{font-family:'Inter',sans-serif;font-weight:600;font-size:24px;line-height:1.15;margin:0}
+.status{display:inline-block;margin:0 0 12px;padding:3px 9px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:var(--tint);color:#7A2F1B;align-self:flex-start}
+.desc{margin:0 0 22px;font-size:17px}
+.front .btn{margin-top:auto}
+.back{display:block;background:#fff;overflow:hidden}
+.back .shot{display:block}
+.back img{display:block;width:100%;aspect-ratio:1.55;object-fit:cover;object-position:center top;background:var(--soft)}
+.back .act{display:none}
+@media (hover:hover) and (min-width:640px){
+  .flip{perspective:1400px;display:flex;flex-direction:column}
+  .flip-inner{flex:1}
+  .flip-inner{display:grid;transform-style:preserve-3d;transition:transform .65s cubic-bezier(.4,.2,.2,1)}
+  .face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;min-height:336px}
+  .back{transform:rotateY(180deg);display:flex;flex-direction:column}
+  .back .shot{flex:1;min-height:0}
+  .back img{height:100%;aspect-ratio:auto}
+  .back .act{display:block;padding:14px 22px 24px;background:#fff}
+  .back .act .btn{display:flex;width:100%}
+  .flip:hover .flip-inner{transform:rotateY(180deg)}
+  .hint{display:block}
+}
+.hint{display:none;margin:12px 0 0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey)}
+@media (prefers-reduced-motion:reduce){.flip-inner{transition:none!important}}
+@media (max-width:639px){.tiles{grid-template-columns:1fr}.wrap{padding-top:36px}.face{box-shadow:5px 5px 0 var(--orange)}.contact{padding:16px}}
+footer{margin-top:56px;padding-top:18px;border-top:2px solid var(--tint);font-size:13px;color:var(--grey);text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>The Stats Guys</h1>
+<div class="rule" aria-hidden="true"></div>
+<p class="tag">Data for activists, researchers and journalists</p>
+</header>
+
+<main>
+<section class="contact" aria-label="Contact">
+<p>Contact us about data for advocacy and activism</p>
+<a class="btn" href="mailto:alex@statsguys.org">Email alex@statsguys.org</a>
+</section>
+
+<h2>Projects</h2>
+<div class="tiles">
+<article class="flip">
+<div class="flip-inner">
+<div class="face front">
+<div class="top"><svg width="44" height="44" class="badge" viewBox="-61 -61 122 122" aria-hidden="true"><circle r="58" fill="#CB5F43" stroke="#2F6690" stroke-width="4"></circle><g transform="translate(-50,-21) scale(0.5)" fill="#FAF9F5" stroke="#FAF9F5" stroke-width="1" stroke-linejoin="round"><path d="M52 58 L74 58 L84 74 L68 74 Z"></path><path d="M104 42 L122 14 L130 14 L126 42 Z"></path><rect x="116" y="9" width="24" height="6" rx="2"></rect><path d="M4 54 Q10 44 34 42 L112 42 L122 50 L122 58 L34 58 Q10 58 4 54 Z"></path><rect x="92" y="30" width="32" height="12" rx="6"></rect><g stroke="none"><circle cx="148" cy="38" r="5.5"></circle><circle cx="156" cy="33" r="7"></circle><circle cx="164" cy="39" r="5.5"></circle><circle cx="166" cy="54" r="5.5"></circle><circle cx="174" cy="49" r="7"></circle><circle cx="182" cy="55" r="5.5"></circle></g></g></svg><h3 class="name"><span style="color:#CB5F43">POLLUTER</span><span style="color:#2F6690">JET</span></h3></div>
+<span class="status">Live from 7 November</span>
+<p class="desc">Tracking private jets that land in Antalya during COP31</p>
+<a class="btn" href="https://cop.polluterjets.com">Visit cop.polluterjets.com &rarr;</a>
+</div>
+<div class="face back" aria-hidden="true"><a class="shot" href="https://cop.polluterjets.com" tabindex="-1"><img src="img/polluterjet.jpg" alt="" width="816" height="523" loading="lazy"></a><div class="act"><a class="btn" href="https://cop.polluterjets.com" tabindex="-1">Visit cop.polluterjets.com &rarr;</a></div></div>
+</div>
+<span class="hint">Hover to preview</span>
+</article>
+
+<article class="flip">
+<div class="flip-inner">
+<div class="face front">
+<div class="top"><svg width="44" height="44" viewBox="0 0 64 64" class="badge" aria-hidden="true"><line x1="32" y1="6" x2="32" y2="15" stroke="#C4552F" stroke-width="2.5" stroke-linecap="round"/><circle cx="32" cy="6" r="3.4" fill="#C4552F"/><rect x="6" y="14" width="52" height="46" rx="11" fill="#16263D"/><rect x="18" y="26" width="8" height="15" rx="3" fill="#FAF9F5"/><rect x="31" y="28" width="10" height="17" rx="3.5" fill="#C4552F"/><rect x="20" y="49" width="20" height="3.2" rx="1.6" fill="#FAF9F5"/></svg><h3 class="name" style="color:#1F2F7A">InequalityBot</h3></div>
+<span class="status">Beta testing</span>
+<p class="desc">Explore data on inequality, aid, emissions, billionaires and lobbying. Open to invited testers.</p>
+<a class="btn alt" href="https://inequalitybot.com/request-invite">Request a beta invite</a>
+</div>
+<div class="face back" aria-hidden="true"><a class="shot" href="https://inequalitybot.com/examples" tabindex="-1"><img src="img/inequalitybot.jpg" alt="" width="752" height="491" loading="lazy"></a><div class="act"><a class="btn alt" href="https://inequalitybot.com/request-invite" tabindex="-1">Request a beta invite</a></div></div>
+</div>
+<span class="hint">Hover to preview</span>
+</article>
+</div>
+</main>
+
+<footer>&copy; The Stats Guys</footer>
+</div>
+</body>
+</html>
