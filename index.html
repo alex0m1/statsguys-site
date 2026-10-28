@@ -23,8 +23,9 @@ header{text-align:center}
 h1{margin:0;font-family:'Dancing Script','Snell Roundhand',cursive;font-weight:500;color:var(--navy);font-size:clamp(56px,12vw,120px);line-height:1.1}
 .rule{width:56px;height:3px;background:var(--orange);margin:18px auto}
 .tag{margin:0 auto;font-family:'IBM Plex Mono',monospace;font-size:clamp(12px,2.4vw,15px);letter-spacing:.14em;text-transform:uppercase;color:var(--grey);max-width:40ch;line-height:1.6}
-.contact{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px;margin:40px 0 0;background:var(--soft);border-left:6px solid var(--orange);padding:18px 22px}
-.contact p{margin:0;font-size:18px;font-weight:500}
+.mail{display:inline-block;margin:14px 0 0;font-family:'IBM Plex Mono',monospace;font-size:clamp(14px,2.8vw,17px);letter-spacing:.06em;color:var(--navy);text-decoration:none}
+.mail:hover{background:var(--tint)}
+main{margin-top:8px}
 h2{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);margin:48px 0 20px;display:flex;align-items:center;gap:14px}
 h2::after{content:"";flex:1;height:2px;background:var(--tint)}
 .tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
@@ -61,7 +62,7 @@ h2::after{content:"";flex:1;height:2px;background:var(--tint)}
 }
 .hint{display:none;margin:12px 0 0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey)}
 @media (prefers-reduced-motion:reduce){.flip-inner{transition:none!important}}
-@media (max-width:639px){.tiles{grid-template-columns:1fr}.wrap{padding-top:36px}.face{box-shadow:5px 5px 0 var(--orange)}.contact{padding:16px}}
+@media (max-width:639px){.tiles{grid-template-columns:1fr}.wrap{padding-top:36px}.face{box-shadow:5px 5px 0 var(--orange)}}
 footer{margin-top:56px;padding-top:18px;border-top:2px solid var(--tint);font-size:13px;color:var(--grey);text-align:center}
 </style>
 </head>
@@ -71,13 +72,10 @@ footer{margin-top:56px;padding-top:18px;border-top:2px solid var(--tint);font-si
 <h1>The Stats Guys</h1>
 <div class="rule" aria-hidden="true"></div>
 <p class="tag">Data for activists, researchers and journalists</p>
+<a class="mail" href="mailto:alex@statsguys.org">alex@statsguys.org</a>
 </header>
 
 <main>
-<section class="contact" aria-label="Contact">
-<p>Contact us about data for advocacy and activism</p>
-<a class="btn" href="mailto:alex@statsguys.org">Email alex@statsguys.org</a>
-</section>
 
 <h2>Projects</h2>
 <div class="tiles">
