@@ -1,0 +1,6 @@
+event,name,centre_lat,centre_lon,radius_km,first_day,last_day_of_window
+davos,Davos · World Economic Forum,46.8,9.84,160,2026-01-17,2026-01-24
+worldcup,World Cup final · New York New Jersey,40.8135,-74.0745,90,2026-07-17,2026-07-20
+yachts,Monaco Yacht Show,43.735,7.42,90,2026-09-21,2026-09-27
+riviera,Cannes and Monaco GP,43.66,7.2,90,2026-05-10,2026-06-08
+cop30,"COP30 Belem (tracker export, airport SBBE)",-1.4558,-48.5044,airport SBBE only,2025-11-08,2025-11-22

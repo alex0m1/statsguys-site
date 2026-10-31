@@ -1,0 +1,413 @@
+{
+ "numbers": {
+  "ineq_wealth": {
+   "b50": 0.0083,
+   "mid": 0.1726,
+   "t10": 0.8192,
+   "t1": 0.4232,
+   "b97": 0.4022
+  },
+  "ineq_bill": {
+   "d0": [
+    "2019-11-07",
+    2162,
+    9378242154000.0
+   ],
+   "d1": [
+    "2025-11-10",
+    3118,
+    18272334176000.0
+   ],
+   "d2": [
+    "2026-08-31",
+    3403,
+    20428094778000.0
+   ]
+  },
+  "davos": {
+   "this_n": 1071,
+   "this_t": 9189.4,
+   "last_n": 956,
+   "last_t": 7447.8,
+   "this_null_co2": 0,
+   "last_null_co2": 0,
+   "window": [
+    "2026-01-17",
+    "2026-01-24"
+   ]
+  },
+  "worldcup": {
+   "this_n": 2051,
+   "this_t": 14826.7,
+   "last_n": 1508,
+   "last_t": 8901.2,
+   "this_null_co2": 0,
+   "last_null_co2": 0,
+   "window": [
+    "2026-07-17",
+    "2026-07-20"
+   ]
+  },
+  "yachts": {
+   "this_n": 607,
+   "this_t": 3650.7,
+   "last_n": 578,
+   "last_t": 3508.6,
+   "this_null_co2": 0,
+   "last_null_co2": 0,
+   "window": [
+    "2026-09-21",
+    "2026-09-27"
+   ]
+  },
+  "riviera": {
+   "this_n": 2742,
+   "this_t": 17193.4,
+   "last_n": 2563,
+   "last_t": 14926.8,
+   "this_null_co2": 1,
+   "last_null_co2": 0,
+   "window": [
+    "2026-05-10",
+    "2026-06-08"
+   ]
+  },
+  "cop30": {
+   "this_n": 49,
+   "this_t": 458.8,
+   "last_n": 10,
+   "last_t": 87.1,
+   "window_n": 59,
+   "window": [
+    "2025-11-10",
+    "2025-11-21"
+   ]
+  },
+  "globe": {
+   "flights": 2357874,
+   "tco2": 11311821.9,
+   "days": 273,
+   "routes_40": 9421,
+   "routes_40_drawn_flights": 939507
+  },
+  "us": {
+   "flights": 2318182,
+   "in_us": 2220575,
+   "same_state": 474316,
+   "loops": 56789,
+   "flights_incl_loops": 2374971
+  },
+  "routes": {
+   "top": [
+    [
+     "EGGW",
+     "KLAX",
+     94.929
+    ],
+    [
+     "PHNL",
+     "YSSY",
+     85.957
+    ],
+    [
+     "KTEB",
+     "SBJH",
+     80.041
+    ],
+    [
+     "KTEB",
+     "LIML",
+     70.619
+    ],
+    [
+     "KTEB",
+     "LFMN",
+     68.884
+    ],
+    [
+     "KIAD",
+     "LFPB",
+     67.554
+    ],
+    [
+     "KTEB",
+     "LSZH",
+     67.23
+    ],
+    [
+     "KTEB",
+     "LSGG",
+     66.376
+    ]
+   ]
+  },
+  "short": {
+   "total": 3040466,
+   "under300": 582289,
+   "under500": 1074720,
+   "loops": 103426
+  },
+  "countries": {
+   "top": [
+    [
+     "US",
+     2374971,
+     10484298.7
+    ],
+    [
+     "GB",
+     66931,
+     423941.5
+    ],
+    [
+     "CA",
+     71239,
+     333634.2
+    ],
+    [
+     "FR",
+     66556,
+     326971.9
+    ],
+    [
+     "IT",
+     51189,
+     245506.8
+    ],
+    [
+     "ES",
+     43008,
+     236725.9
+    ],
+    [
+     "DE",
+     55618,
+     182164.6
+    ],
+    [
+     "BR",
+     43007,
+     176769.4
+    ],
+    [
+     "MX",
+     39696,
+     169001.5
+    ],
+    [
+     "CH",
+     31936,
+     148208.4
+    ]
+   ],
+   "total_tco2": 14661340.1,
+   "total_flights": 3143892
+  },
+  "train": {
+   "lon": {
+    "train": 207,
+    "jet": 250
+   },
+   "fll": {
+    "train": 68,
+    "jet": 87
+   },
+   "bod": {
+    "train": 184,
+    "jet": 193
+   },
+   "dc": {
+    "train": 200,
+    "jet": 208
+   },
+   "bru": {
+    "train": 144,
+    "jet": 185
+   },
+   "tok": {
+    "train": 112,
+    "jet": 161
+   }
+  },
+  "tpj": {
+   "worldcup": {
+    "movements": 3449,
+    "excess_kt": 13.36,
+    "above_baseline_pct": 64,
+    "baseline": "5-year average for NY/NJ-area airports",
+    "source": "Tax Private Jets (Institute for Policy Studies) World Cup media advisory, 16 Jul 2026, final update 23 Jul 2026",
+    "url": "https://docs.google.com/document/d/1h_wybQq1niFgujx0IKL_aDXY06jl7VLy4TZxy_k13oE/edit?tab=t.0"
+   },
+   "yachts": {
+    "flights": 1386,
+    "tco2e": 12246,
+    "source": "Tax Private Jets (Institute for Policy Studies) Monaco Yacht Show press release, as summarised on taxprivatejets.org",
+    "url": "https://docs.google.com/document/d/1pXpiB2GsQ0j0H3wcVzZm9PWKfhDd8r2slHiaAXOuU34/edit?"
+   }
+  }
+ },
+ "files": {
+  "ineq_wealth": [
+   [
+    "wid_world_wealth_shares_2024.csv",
+    387,
+    16143,
+    "Every percentile group WID.world publishes for the world in 2024 (share of the total held by the group; p99p100 = the richest 1%)."
+   ]
+  ],
+  "ineq_bill": [
+   [
+    "billionaires_daily_totals.csv",
+    2310,
+    87764,
+    "Daily count and combined net worth of the world's billionaires (Forbes real-time list), 7 Nov 2019 to 31 Aug 2026."
+   ]
+  ],
+  "davos": [
+   [
+    "event_davos_flights.csv",
+    2027,
+    260207,
+    "One row per flight landing within the circle in the window (this_year) and on the same dates one year earlier (last_year)."
+   ]
+  ],
+  "worldcup": [
+   [
+    "event_worldcup_flights.csv",
+    3559,
+    479105,
+    "One row per flight landing within the circle in the window (this_year) and on the same dates one year earlier (last_year)."
+   ],
+   [
+    "tax_private_jets_published_figures.csv",
+    5,
+    1768,
+    "The figures Tax Private Jets published for the World Cup final and the Monaco Yacht Show, copied as published (quoted inputs, not recalculated)."
+   ]
+  ],
+  "yachts": [
+   [
+    "event_yachts_flights.csv",
+    1185,
+    151946,
+    "One row per flight landing within the circle in the window (this_year) and on the same dates one year earlier (last_year)."
+   ],
+   [
+    "tax_private_jets_published_figures.csv",
+    5,
+    1768,
+    "The same file: the five Tax Private Jets figures for the World Cup and the Yacht Show."
+   ]
+  ],
+  "riviera": [
+   [
+    "event_riviera_flights.csv",
+    5305,
+    679215,
+    "One row per flight landing within the circle in the window (this_year) and on the same dates one year earlier (last_year)."
+   ]
+  ],
+  "cop30": [
+   [
+    "event_cop30_flights.csv",
+    69,
+    7550,
+    "Tracker export rows landing at Belem airport (SBBE): 2025 8 to 22 Nov (this_year) and 10 to 22 Nov 2024 (last_year). Rows are copied from the tracker CSVs in data/cop30."
+   ]
+  ],
+  "event_airports": [
+   [
+    "event_airports.csv",
+    46,
+    4060,
+    "Every airport that counted, with coordinates (OurAirports) and its distance from the event centre."
+   ],
+   [
+    "event_definitions.csv",
+    5,
+    474,
+    "The circle (centre and radius) and the window used for each event."
+   ]
+  ],
+  "globe": [
+   [
+    "world_daily_2026.csv",
+    273,
+    7773,
+    "Flights per day of landing, 1 Jan to 30 Sep 2026 (UTC), with tonnes of CO2."
+   ],
+   [
+    "world_routes_2026.csv",
+    9421,
+    605401,
+    "Every airport pair with 40 or more flights (all directions counted separately) Jan to Sep 2026. The globe draws the 2,500 busiest."
+   ]
+  ],
+  "us": [
+   [
+    "us_departures_2025_by_state.csv",
+    51,
+    1255,
+    "2025 flights leaving the US (takeoff and landing airport different), by state of takeoff."
+   ],
+   [
+    "us_departures_2025_by_landing_country.csv",
+    133,
+    981,
+    "The same flights by country of landing."
+   ]
+  ],
+  "routes": [
+   [
+    "route_pairs_2025.csv",
+    4405,
+    291337,
+    "Every airport pair with at least 50 flights in EACH direction in 2025, ranked by round trip (the two one-way means added)."
+   ]
+  ],
+  "short": [
+   [
+    "distance_bands_2025.csv",
+    8,
+    269,
+    "2025 flights (takeoff and landing airport different) by great-circle distance band."
+   ]
+  ],
+  "countries": [
+   [
+    "departures_by_country_2025.csv",
+    179,
+    3115,
+    "2025, every flight (including loops, which burn real fuel) by country of takeoff, with tonnes of CO2."
+   ]
+  ],
+  "audit": [
+   [
+    "monthly_totals.csv",
+    21,
+    861,
+    "Monthly totals for the whole dataset (Jan 2025 to Sep 2026): a completeness check."
+   ]
+  ],
+  "train": [
+   [
+    "train_vs_jet_legs.csv",
+    67,
+    11883,
+    "Every leg of every journey, with the Google Maps link for each timed leg."
+   ],
+   [
+    "train_vs_jet_summary.csv",
+    6,
+    467,
+    "Totals per route."
+   ],
+   [
+    "jet_pair_flights.csv",
+    15328,
+    1173238,
+    "Every tracked flight between each route's two airports, both directions, Jan 2025 to Sep 2026."
+   ]
+  ]
+ }
+}

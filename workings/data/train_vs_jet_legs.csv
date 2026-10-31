@@ -1,0 +1,68 @@
+route,mode,step,leg,minutes,google_maps_url,note
+lon,train,1,Eurostar St Pancras to Gare du Nord,152,"https://www.google.com/maps/dir/51.5311162,-0.1258659/48.8583701,2.2944813/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+lon,train,2,Walk to Metro 4,7,"https://www.google.com/maps/dir/51.5311162,-0.1258659/48.8583701,2.2944813/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+lon,train,3,Metro 4 Gare du Nord to Cite,11,"https://www.google.com/maps/dir/51.5311162,-0.1258659/48.8583701,2.2944813/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+lon,train,4,Walk Cite to Saint-Michel,4,"https://www.google.com/maps/dir/51.5311162,-0.1258659/48.8583701,2.2944813/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+lon,train,5,RER C to Champ de Mars,10,"https://www.google.com/maps/dir/51.5311162,-0.1258659/48.8583701,2.2944813/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+lon,train,6,Walk to the Eiffel Tower,8,"https://www.google.com/maps/dir/51.5311162,-0.1258659/48.8583701,2.2944813/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+lon,train,7,Allowance: international train check-in,15,,rule set by the Stats Guys
+lon,jet,1,Drive from start to EGKB,100,"https://www.google.com/maps/dir/51.5311162,-0.1258659/51.3308,0.0325/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e0","Google Maps driving, departing 16:00 Fri 30 Oct 2026"
+lon,jet,2,Airport check-in (international),30,,rule set by the Stats Guys
+lon,jet,3,Flight EGKB to LFPB (median of tracked flights),55,,median duration of 818 flights in world data (see jet_pair_flights.csv)
+lon,jet,4,Leave plane and reach the car,15,,rule set by the Stats Guys
+lon,jet,5,Drive from LFPB to the destination,50,"https://www.google.com/maps/dir/48.969,2.441/48.8583701,2.2944813/data=!4m6!4m5!2m3!6e0!7e2!8j1793391600!3e0","Google Maps driving, departing at the arrival time (20:20)"
+fll,train,1,Walk to Fort Lauderdale Brightline,8,"https://www.google.com/maps/dir/26.1224,-80.1434/26.7153,-80.0534/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+fll,train,2,Brightline to West Palm Beach,45,"https://www.google.com/maps/dir/26.1224,-80.1434/26.7153,-80.0534/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+fll,train,3,Walk to destination,10,"https://www.google.com/maps/dir/26.1224,-80.1434/26.7153,-80.0534/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+fll,train,4,Allowance: walk to platform,5,,rule set by the Stats Guys
+fll,jet,1,Drive from start to KFLL,20,"https://www.google.com/maps/dir/26.1224,-80.1434/26.0726,-80.1527/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e0","Google Maps driving, departing 16:00 Fri 30 Oct 2026"
+fll,jet,2,Airport check-in (domestic),15,,rule set by the Stats Guys
+fll,jet,3,Flight KFLL to KPBI (median of tracked flights),23,,median duration of 1893 flights in world data (see jet_pair_flights.csv)
+fll,jet,4,Leave plane and reach the car,15,,rule set by the Stats Guys
+fll,jet,5,Drive from KPBI to the destination,14,"https://www.google.com/maps/dir/26.6832,-80.0956/26.7153,-80.0534/data=!4m6!4m5!2m3!6e0!7e2!8j1793380380!3e0","Google Maps driving, departing at the arrival time (17:13)"
+bod,train,1,Walk to tram,3,"https://www.google.com/maps/dir/44.8378,-0.5792/48.853,2.3499/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bod,train,2,Tram F to Gare Saint-Jean,11,"https://www.google.com/maps/dir/44.8378,-0.5792/48.853,2.3499/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bod,train,3,Walk to the station,3,"https://www.google.com/maps/dir/44.8378,-0.5792/48.853,2.3499/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bod,train,4,OUIGO Bordeaux to Paris Montparnasse,140,"https://www.google.com/maps/dir/44.8378,-0.5792/48.853,2.3499/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bod,train,5,Walk in Montparnasse,11,"https://www.google.com/maps/dir/44.8378,-0.5792/48.853,2.3499/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bod,train,6,Metro 4,7,"https://www.google.com/maps/dir/44.8378,-0.5792/48.853,2.3499/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bod,train,7,Walk to destination,4,"https://www.google.com/maps/dir/44.8378,-0.5792/48.853,2.3499/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bod,train,8,Allowance: walk to platform,5,,rule set by the Stats Guys
+bod,jet,1,Drive from start to LFBD,35,"https://www.google.com/maps/dir/44.8378,-0.5792/44.8283,-0.7156/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e0","Google Maps driving, departing 16:00 Fri 30 Oct 2026"
+bod,jet,2,Airport check-in (domestic),15,,rule set by the Stats Guys
+bod,jet,3,Flight LFBD to LFPB (median of tracked flights),63,,median duration of 462 flights in world data (see jet_pair_flights.csv)
+bod,jet,4,Leave plane and reach the car,15,,rule set by the Stats Guys
+bod,jet,5,Drive from LFPB to the destination,65,"https://www.google.com/maps/dir/48.969,2.441/48.853,2.3499/data=!4m6!4m5!2m3!6e0!7e2!8j1793383680!3e0","Google Maps driving, departing at the arrival time (18:08)"
+dc,train,1,Walk in Union Station,2,"https://www.google.com/maps/dir/38.8973,-77.0063/40.758,-73.9855/data=!4m7!4m6!2m3!6e0!7e2!8j1793376000!3e3!5i3","Google Maps transit result at 16:00 (4th option, Acela 3h18); waits between legs removed"
+dc,train,2,Acela Washington to New York Penn,179,"https://www.google.com/maps/dir/38.8973,-77.0063/40.758,-73.9855/data=!4m7!4m6!2m3!6e0!7e2!8j1793376000!3e3!5i3","Google Maps transit result at 16:00 (4th option, Acela 3h18); waits between legs removed"
+dc,train,3,Walk to subway,6,"https://www.google.com/maps/dir/38.8973,-77.0063/40.758,-73.9855/data=!4m7!4m6!2m3!6e0!7e2!8j1793376000!3e3!5i3","Google Maps transit result at 16:00 (4th option, Acela 3h18); waits between legs removed"
+dc,train,4,Subway to 42 St,2,"https://www.google.com/maps/dir/38.8973,-77.0063/40.758,-73.9855/data=!4m7!4m6!2m3!6e0!7e2!8j1793376000!3e3!5i3","Google Maps transit result at 16:00 (4th option, Acela 3h18); waits between legs removed"
+dc,train,5,Walk to Times Square,6,"https://www.google.com/maps/dir/38.8973,-77.0063/40.758,-73.9855/data=!4m7!4m6!2m3!6e0!7e2!8j1793376000!3e3!5i3","Google Maps transit result at 16:00 (4th option, Acela 3h18); waits between legs removed"
+dc,train,6,Allowance: walk to platform,5,,rule set by the Stats Guys
+dc,jet,1,Drive from start to KIAD,55,"https://www.google.com/maps/dir/38.8973,-77.0063/38.9445,-77.4558/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e0","Google Maps driving, departing 16:00 Fri 30 Oct 2026"
+dc,jet,2,Airport check-in (domestic),15,,rule set by the Stats Guys
+dc,jet,3,Flight KIAD to KTEB (median of tracked flights),73,,median duration of 4581 flights in world data (see jet_pair_flights.csv)
+dc,jet,4,Leave plane and reach the car,15,,rule set by the Stats Guys
+dc,jet,5,Drive from KTEB to the destination,50,"https://www.google.com/maps/dir/40.8501,-74.0608/40.758,-73.9855/data=!4m6!4m5!2m3!6e0!7e2!8j1793385480!3e0","Google Maps driving, departing at the arrival time (18:38)"
+bru,train,1,Walk to Chatelet,12,"https://www.google.com/maps/dir/48.8606,2.3376/50.8467,4.3525/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bru,train,2,Metro 4 to Gare du Nord,9,"https://www.google.com/maps/dir/48.8606,2.3376/50.8467,4.3525/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bru,train,3,Walk to the Eurostar,6,"https://www.google.com/maps/dir/48.8606,2.3376/50.8467,4.3525/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bru,train,4,Eurostar to Brussels-Midi,91,"https://www.google.com/maps/dir/48.8606,2.3376/50.8467,4.3525/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bru,train,5,Walk to the local train,1,"https://www.google.com/maps/dir/48.8606,2.3376/50.8467,4.3525/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bru,train,6,Train to Brussels-Central,4,"https://www.google.com/maps/dir/48.8606,2.3376/50.8467,4.3525/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bru,train,7,Walk to Grand Place,6,"https://www.google.com/maps/dir/48.8606,2.3376/50.8467,4.3525/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+bru,train,8,Allowance: international train check-in,15,,rule set by the Stats Guys
+bru,jet,1,Drive from start to LFPB,60,"https://www.google.com/maps/dir/48.8606,2.3376/48.969,2.441/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e0","Google Maps driving, departing 16:00 Fri 30 Oct 2026"
+bru,jet,2,Airport check-in (international),30,,rule set by the Stats Guys
+bru,jet,3,Flight LFPB to EBBR (median of tracked flights),45,,median duration of 242 flights in world data (see jet_pair_flights.csv)
+bru,jet,4,Leave plane and reach the car,15,,rule set by the Stats Guys
+bru,jet,5,Drive from EBBR to the destination,35,"https://www.google.com/maps/dir/50.9014,4.4844/50.8467,4.3525/data=!4m6!4m5!2m3!6e0!7e2!8j1793385000!3e0","Google Maps driving, departing at the arrival time (18:30)"
+tok,train,1,Walk to Tokyo Station platform,7,"https://www.google.com/maps/dir/35.6812,139.7671/35.1709,136.8815/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+tok,train,2,Tokaido Shinkansen Tokyo to Nagoya,96,"https://www.google.com/maps/dir/35.6812,139.7671/35.1709,136.8815/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+tok,train,3,Walk to destination,4,"https://www.google.com/maps/dir/35.6812,139.7671/35.1709,136.8815/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e3",Google Maps transit result at 16:00 (first option); waits between legs removed
+tok,train,4,Allowance: walk to platform,5,,rule set by the Stats Guys
+tok,jet,1,Drive from start to RJTT,35,"https://www.google.com/maps/dir/35.6812,139.7671/35.5494,139.7798/data=!4m6!4m5!2m3!6e0!7e2!8j1793376000!3e0","Google Maps driving, departing 16:00 Fri 30 Oct 2026"
+tok,jet,2,Airport check-in (domestic),15,,rule set by the Stats Guys
+tok,jet,3,Flight RJTT to RJNA (median of tracked flights),61,,median duration of 88 flights in world data (see jet_pair_flights.csv)
+tok,jet,4,Leave plane and reach the car,15,,rule set by the Stats Guys
+tok,jet,5,Drive from RJNA to the destination,35,"https://www.google.com/maps/dir/35.255,136.9238/35.1709,136.8815/data=!4m6!4m5!2m3!6e0!7e2!8j1793383560!3e0","Google Maps driving, departing at the arrival time (18:06)"

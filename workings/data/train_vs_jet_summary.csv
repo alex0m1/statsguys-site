@@ -1,0 +1,7 @@
+route,name,train_minutes,jet_minutes,faster,by_minutes,tracked_flights_a_to_b,tco2_all_tracked_flights_both_ways
+lon,London to Paris (St Pancras to the Eiffel Tower),207,250,train,43,818,3702.1
+fll,Fort Lauderdale to West Palm Beach,68,87,train,19,1893,4486.1
+bod,Bordeaux to Paris,184,193,train,9,462,2478.6
+dc,Washington to New York,200,208,train,8,4581,28423.2
+bru,Paris to Brussels,144,185,train,41,242,1147.0
+tok,Tokyo to Nagoya,112,161,train,49,88,432.0
