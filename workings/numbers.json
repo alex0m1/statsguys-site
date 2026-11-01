@@ -36,42 +36,6 @@
     "2026-01-24"
    ]
   },
-  "worldcup": {
-   "this_n": 2051,
-   "this_t": 14826.7,
-   "last_n": 1508,
-   "last_t": 8901.2,
-   "this_null_co2": 0,
-   "last_null_co2": 0,
-   "window": [
-    "2026-07-17",
-    "2026-07-20"
-   ]
-  },
-  "yachts": {
-   "this_n": 607,
-   "this_t": 3650.7,
-   "last_n": 578,
-   "last_t": 3508.6,
-   "this_null_co2": 0,
-   "last_null_co2": 0,
-   "window": [
-    "2026-09-21",
-    "2026-09-27"
-   ]
-  },
-  "riviera": {
-   "this_n": 2742,
-   "this_t": 17193.4,
-   "last_n": 2563,
-   "last_t": 14926.8,
-   "this_null_co2": 1,
-   "last_null_co2": 0,
-   "window": [
-    "2026-05-10",
-    "2026-06-08"
-   ]
-  },
   "cop30": {
    "this_n": 49,
    "this_t": 458.8,
@@ -83,19 +47,124 @@
     "2025-11-21"
    ]
   },
-  "globe": {
-   "flights": 2357874,
-   "tco2": 11311821.9,
-   "days": 273,
-   "routes_40": 9421,
-   "routes_40_drawn_flights": 939507
-  },
   "us": {
    "flights": 2318182,
    "in_us": 2220575,
    "same_state": 474316,
    "loops": 56789,
    "flights_incl_loops": 2374971
+  },
+  "i1": {
+   "total": 3143892,
+   "tco2": 14661340.1,
+   "top": [
+    [
+     "US",
+     2374971,
+     10484298.7
+    ],
+    [
+     "CA",
+     71239,
+     333634.2
+    ],
+    [
+     "GB",
+     66931,
+     423941.5
+    ],
+    [
+     "FR",
+     66556,
+     326971.9
+    ],
+    [
+     "DE",
+     55618,
+     182164.6
+    ],
+    [
+     "IT",
+     51189,
+     245506.8
+    ],
+    [
+     "ES",
+     43008,
+     236725.9
+    ],
+    [
+     "BR",
+     43007,
+     176769.4
+    ],
+    [
+     "MX",
+     39696,
+     169001.5
+    ],
+    [
+     "CH",
+     31936,
+     148208.4
+    ]
+   ]
+  },
+  "i2": {
+   "top": [
+    [
+     "KTEB",
+     72074
+    ],
+    [
+     "KDAL",
+     37404
+    ],
+    [
+     "KHPN",
+     33906
+    ],
+    [
+     "KIAD",
+     33027
+    ],
+    [
+     "KPBI",
+     31579
+    ],
+    [
+     "KLAS",
+     28813
+    ],
+    [
+     "KOPF",
+     26655
+    ],
+    [
+     "KVNY",
+     26625
+    ],
+    [
+     "KSDL",
+     26229
+    ],
+    [
+     "KHOU",
+     24478
+    ]
+   ]
+  },
+  "i5": {
+   "jets": 22558,
+   "top100_tco2": 500873.8,
+   "all_tco2": 14661340.1
+  },
+  "i15": {
+   "d0": "2025-11-10",
+   "d1": "2026-10-14",
+   "gain_bn": 2273.8,
+   "aid_bn": 100.7,
+   "multiple": 22.6
   },
   "routes": {
    "top": [
@@ -228,22 +297,6 @@
     "train": 112,
     "jet": 161
    }
-  },
-  "tpj": {
-   "worldcup": {
-    "movements": 3449,
-    "excess_kt": 13.36,
-    "above_baseline_pct": 64,
-    "baseline": "5-year average for NY/NJ-area airports",
-    "source": "Tax Private Jets (Institute for Policy Studies) World Cup media advisory, 16 Jul 2026, final update 23 Jul 2026",
-    "url": "https://docs.google.com/document/d/1h_wybQq1niFgujx0IKL_aDXY06jl7VLy4TZxy_k13oE/edit?tab=t.0"
-   },
-   "yachts": {
-    "flights": 1386,
-    "tco2e": 12246,
-    "source": "Tax Private Jets (Institute for Policy Studies) Monaco Yacht Show press release, as summarised on taxprivatejets.org",
-    "url": "https://docs.google.com/document/d/1pXpiB2GsQ0j0H3wcVzZm9PWKfhDd8r2slHiaAXOuU34/edit?"
-   }
   }
  },
  "files": {
@@ -271,42 +324,6 @@
     "One row per flight landing within the circle in the window (this_year) and on the same dates one year earlier (last_year)."
    ]
   ],
-  "worldcup": [
-   [
-    "event_worldcup_flights.csv",
-    3559,
-    479105,
-    "One row per flight landing within the circle in the window (this_year) and on the same dates one year earlier (last_year)."
-   ],
-   [
-    "tax_private_jets_published_figures.csv",
-    5,
-    1768,
-    "The figures Tax Private Jets published for the World Cup final and the Monaco Yacht Show, copied as published (quoted inputs, not recalculated)."
-   ]
-  ],
-  "yachts": [
-   [
-    "event_yachts_flights.csv",
-    1185,
-    151946,
-    "One row per flight landing within the circle in the window (this_year) and on the same dates one year earlier (last_year)."
-   ],
-   [
-    "tax_private_jets_published_figures.csv",
-    5,
-    1768,
-    "The same file: the five Tax Private Jets figures for the World Cup and the Yacht Show."
-   ]
-  ],
-  "riviera": [
-   [
-    "event_riviera_flights.csv",
-    5305,
-    679215,
-    "One row per flight landing within the circle in the window (this_year) and on the same dates one year earlier (last_year)."
-   ]
-  ],
   "cop30": [
    [
     "event_cop30_flights.csv",
@@ -318,29 +335,15 @@
   "event_airports": [
    [
     "event_airports.csv",
-    46,
-    4060,
+    18,
+    1472,
     "Every airport that counted, with coordinates (OurAirports) and its distance from the event centre."
    ],
    [
     "event_definitions.csv",
-    5,
-    474,
+    2,
+    255,
     "The circle (centre and radius) and the window used for each event."
-   ]
-  ],
-  "globe": [
-   [
-    "world_daily_2026.csv",
-    273,
-    7773,
-    "Flights per day of landing, 1 Jan to 30 Sep 2026 (UTC), with tonnes of CO2."
-   ],
-   [
-    "world_routes_2026.csv",
-    9421,
-    605401,
-    "Every airport pair with 40 or more flights (all directions counted separately) Jan to Sep 2026. The globe draws the 2,500 busiest."
    ]
   ],
   "us": [
@@ -355,6 +358,44 @@
     133,
     981,
     "The same flights by country of landing."
+   ]
+  ],
+  "i1": [
+   [
+    "departures_by_country_top10_2025.csv",
+    10,
+    421,
+    "2025, every flight (loops included) by country of takeoff: the ten with most flights, with their share of the world total."
+   ]
+  ],
+  "i2": [
+   [
+    "landing_airports_top10_2025.csv",
+    10,
+    571,
+    "2025, every landing (loops included) counted by landing airport: the ten busiest."
+   ]
+  ],
+  "i5": [
+   [
+    "top100_jets_by_co2_2025.csv",
+    100,
+    5392,
+    "The 100 aircraft with the most CO2 in 2025 (flights with a CO2 value, loops included)."
+   ]
+  ],
+  "i15": [
+   [
+    "billionaires_daily_totals_since_cop30.csv",
+    331,
+    16472,
+    "Daily combined net worth of the world's billionaires (Forbes real-time list), 10 Nov 2025 to the last day of the series."
+   ],
+   [
+    "aid_top5_donors_2025.csv",
+    5,
+    426,
+    "The five biggest aid donors' 2025 official development assistance, copied as published (quoted inputs)."
    ]
   ],
   "routes": [

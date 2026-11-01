@@ -20,6 +20,8 @@ a{color:var(--navy)}
 a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
 .wrap{max-width:980px;margin:0 auto;padding:48px 16px 40px}
 header{text-align:center}
+.toplink{position:absolute;top:14px;right:16px;font-family:'IBM Plex Mono',monospace;font-size:clamp(12px,2.6vw,14px);letter-spacing:.06em;color:var(--navy);text-decoration:none;border-bottom:1px solid currentColor}
+.toplink:hover{background:var(--tint)}
 h1{margin:0;font-family:'Dancing Script','Snell Roundhand',cursive;font-weight:500;color:var(--navy);font-size:clamp(56px,12vw,120px);line-height:1.1}
 .rule{width:56px;height:3px;background:var(--orange);margin:18px auto}
 .tag{margin:0 auto;font-family:'IBM Plex Mono',monospace;font-size:clamp(12px,2.4vw,15px);letter-spacing:.14em;text-transform:uppercase;color:var(--grey);max-width:40ch;line-height:1.6}
@@ -50,19 +52,20 @@ h2::after{content:"";flex:1;height:2px;background:var(--tint)}
 .back .shot{display:block}
 .back img{display:block;width:100%;aspect-ratio:1.55;object-fit:cover;object-position:center top;background:var(--soft)}
 .back .act{display:none}
-@media (hover:hover) and (min-width:640px){
-  .flip{perspective:1400px;display:flex;flex-direction:column}
-  .flip-inner{flex:1}
-  .flip-inner{display:grid;transform-style:preserve-3d;transition:transform .65s cubic-bezier(.4,.2,.2,1)}
-  .face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;min-height:336px}
-  .back{transform:rotateY(180deg);display:flex;flex-direction:column}
-  .back .shot{flex:1;min-height:0}
-  .back img{height:100%;aspect-ratio:auto}
-  .back .act{display:block;padding:14px 22px 24px;background:#fff}
-  .back .act .btn{display:flex;width:100%}
-  .flip:hover .flip-inner{transform:rotateY(180deg)}
-  .hint{display:block}
-}
+/* flip at every width: hover with a mouse, tap on a touch screen (script below toggles .flipped) */
+.flip{perspective:1400px;display:flex;flex-direction:column}
+.flip-inner{flex:1;display:grid;transform-style:preserve-3d;transition:transform .65s cubic-bezier(.4,.2,.2,1)}
+.face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;min-height:336px}
+.back{transform:rotateY(180deg);display:flex;flex-direction:column}
+.back .shot{flex:1;min-height:0}
+.back img{height:100%;aspect-ratio:auto}
+.back .act{display:block;padding:14px 22px 24px;background:#fff}
+.back .act .btn{display:flex;width:100%}
+@media (hover:hover){.flip:hover .flip-inner{transform:rotateY(180deg)}}
+.flip.flipped .flip-inner{transform:rotateY(180deg)}
+.hint{display:block}
+.hint .t{display:none}
+@media (hover:none){.hint .h{display:none}.hint .t{display:inline}.flip{cursor:pointer}}
 .hint{display:none;margin:12px 0 0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey)}
 @media (prefers-reduced-motion:reduce){.flip-inner{transition:none!important}}
 @media (max-width:639px){.tiles{grid-template-columns:1fr}.wrap{padding-top:36px}.face{box-shadow:5px 5px 0 var(--orange)}}
@@ -70,6 +73,7 @@ footer{margin-top:56px;padding-top:18px;border-top:2px solid var(--tint);font-si
 </style>
 </head>
 <body>
+<a class="toplink" href="/workings/">Workings</a>
 <div class="wrap">
 <header>
 <h1>The Stats Guys</h1>
@@ -93,7 +97,7 @@ footer{margin-top:56px;padding-top:18px;border-top:2px solid var(--tint);font-si
 </div>
 <div class="face back" aria-hidden="true"><a class="shot" href="https://cop.polluterjets.com" tabindex="-1"><img src="img/polluterjet.jpg" alt="" width="816" height="523" loading="lazy"></a><div class="act"><a class="btn" href="https://cop.polluterjets.com" tabindex="-1">Visit cop.polluterjets.com &rarr;</a></div></div>
 </div>
-<span class="hint">Hover to preview</span>
+<span class="hint"><span class="h">Hover to preview</span><span class="t">Tap to preview</span></span>
 </article>
 
 <article class="flip">
@@ -106,12 +110,25 @@ footer{margin-top:56px;padding-top:18px;border-top:2px solid var(--tint);font-si
 </div>
 <div class="face back" aria-hidden="true"><a class="shot" href="https://inequalitybot.com/examples" tabindex="-1"><img src="img/inequalitybot.jpg" alt="" width="752" height="491" loading="lazy"></a><div class="act"><a class="btn alt" href="https://inequalitybot.com/request-invite" tabindex="-1">Request a beta invite</a></div></div>
 </div>
-<span class="hint">Hover to preview</span>
+<span class="hint"><span class="h">Hover to preview</span><span class="t">Tap to preview</span></span>
 </article>
 </div>
 </main>
 
 <footer>&copy; The Stats Guys</footer>
 </div>
+<script>
+// Touch screens have no hover: tap a card to flip it, tap again to flip back (buttons still follow their links).
+(function () {
+  if (!window.matchMedia || !matchMedia('(hover:none)').matches) return;
+  document.querySelectorAll('.flip').forEach(function (c) {
+    c.addEventListener('click', function (e) {
+      if (e.target.closest('a.btn')) return;
+      e.preventDefault();
+      c.classList.toggle('flipped');
+    });
+  });
+})();
+</script>
 </body>
 </html>
