@@ -1,0 +1,5 @@
+group,wid_percentile_group,wid_variable,avg_wealth_per_adult_2025_prices_usd,avg_wealth_per_adult_2024_usd,stack_height_m
+POOREST 50%,p0p50,ahwealj992,1526.1,1449.65,0.1583
+MIDDLE 40%,p50p90,ahwealj992,39818.2,37823.41,4.1311
+TOP 10%,p90p100,ahwealj992,756015.2,718140.83,78.4353
+TOP 1%,p99p100,ahwealj992,3905865.5,3710191.92,405.2272

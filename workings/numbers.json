@@ -298,6 +298,36 @@
     "train": 112,
     "jet": 161
    }
+  },
+  "wealth_moon": {
+   "groups": [
+    [
+     "POOREST 50%",
+     1449.6464070945126,
+     0.1583
+    ],
+    [
+     "MIDDLE 40%",
+     37823.41299192105,
+     4.1311
+    ],
+    [
+     "TOP 10%",
+     718140.8285098221,
+     78.4353
+    ],
+    [
+     "TOP 1%",
+     3710191.9197099875,
+     405.2272
+    ]
+   ],
+   "elon_km": 105987.9202564,
+   "n12_km": 373225.8,
+   "total_km": 387754.6,
+   "moon_km": 384400,
+   "elon_pct": 27.572299754526536,
+   "bill_mm": 0.10922
   }
  },
  "files": {
@@ -449,6 +479,20 @@
     15328,
     1173238,
     "Every tracked flight between each route's two airports, both directions, Jan 2025 to Sep 2026."
+   ]
+  ],
+  "wealth_moon": [
+   [
+    "wealth_stack_groups.csv",
+    4,
+    341,
+    "Average wealth per adult of four groups of the world's adults (WID.world, 2024) and how tall that many $1 bills stack."
+   ],
+   [
+    "wealth_stack_billionaires.csv",
+    13,
+    787,
+    "Net worth of the 13 richest people on the Forbes real-time list on 14 Oct 2026, the km of $1 bills each makes, and the running total against the 384,400 km to the Moon."
    ]
   ]
  }
