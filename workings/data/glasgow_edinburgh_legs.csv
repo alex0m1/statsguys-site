@@ -1,0 +1,9 @@
+route,mode,step,leg,minutes,google_maps_url,note
+gla,train,1,Walk from George Square to Queen Street station,3,"https://www.google.com/maps/dir/George+Square,+Glasgow+G2+1DH/Edinburgh+Waverley+Train+Station,+Princes+St.,+Edinburgh+EH1+1BE/data=!4m2!4m1!3e3","Google Maps, Mon 9 Nov 2026 about 14:12, leave now"
+gla,train,2,"ScotRail Queen Street to Edinburgh Waverley (14:15, 6 stops)",50,"https://www.google.com/maps/dir/George+Square,+Glasgow+G2+1DH/Edinburgh+Waverley+Train+Station,+Princes+St.,+Edinburgh+EH1+1BE/data=!4m2!4m1!3e3","Google Maps, Mon 9 Nov 2026 about 14:12, leave now"
+gla,train,3,Walk from Waverley to the Waverley station address,3,"https://www.google.com/maps/dir/George+Square,+Glasgow+G2+1DH/Edinburgh+Waverley+Train+Station,+Princes+St.,+Edinburgh+EH1+1BE/data=!4m2!4m1!3e3","Google Maps, Mon 9 Nov 2026 about 14:12, leave now"
+gla,jet,1,Drive from George Square to Glasgow Airport (EGPF),23,"https://www.google.com/maps/dir/George+Square,+Glasgow+G2+1DH/Glasgow+Airport/data=!4m2!4m1!3e0","Google Maps, Mon 9 Nov 2026 about 14:12, leave now"
+gla,jet,2,Check-in and boarding (domestic),15,,rule set by the Stats Guy
+gla,jet,3,"Flight EGPF to EGPH (median of tracked flights, both directions)",32,,"median duration of the flights in jet_flights_glasgow_edinburgh.csv (31.8 min, rounded)"
+gla,jet,4,Leave plane and reach the car,15,,rule set by the Stats Guy
+gla,jet,5,Drive from Edinburgh Airport (EGPH) to Waverley station,29,"https://www.google.com/maps/dir/Edinburgh+Airport/Edinburgh+Waverley+Train+Station,+Princes+St.,+Edinburgh+EH1+1BE/data=!4m2!4m1!3e0","Google Maps, Mon 9 Nov 2026 about 14:12, leave now"

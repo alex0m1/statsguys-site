@@ -299,6 +299,17 @@
     "jet": 161
    }
   },
+  "gla": {
+   "train": 56,
+   "jet": 114,
+   "fly": 32,
+   "median": 31.8,
+   "n_all": 100,
+   "n26": 43,
+   "t26": 72.1,
+   "fwd_n": 44,
+   "fwd_median": 26.4
+  },
   "wealth_moon": {
    "groups": [
     [
@@ -465,7 +476,7 @@
    [
     "train_vs_jet_legs.csv",
     67,
-    11883,
+    11865,
     "Every leg of every journey, with the Google Maps link for each timed leg."
    ],
    [
@@ -479,6 +490,20 @@
     15328,
     1173238,
     "Every tracked flight between each route's two airports, both directions, Jan 2025 to Sep 2026."
+   ]
+  ],
+  "gla": [
+   [
+    "glasgow_edinburgh_legs.csv",
+    8,
+    1649,
+    "Every leg of the journey by train and by private jet, with the Google Maps link for each timed leg."
+   ],
+   [
+    "jet_flights_glasgow_edinburgh.csv",
+    100,
+    7380,
+    "Every tracked private jet flight between Glasgow Airport (EGPF) and Edinburgh Airport (EGPH), both directions, Jan 2025 to Sep 2026."
    ]
   ],
   "wealth_moon": [
